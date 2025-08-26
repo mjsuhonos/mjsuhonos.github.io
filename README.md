@@ -1,9 +1,6 @@
-**Minimal Homepage**
 # MJ Suhonos
 
-I am an information scientist and software developer, currently working at TMU - Toronto Metropolitain University in Toronto.
-
-## Links to my work
+I currently work at Toronto Metropolitain University in Toronto.
 
 - [Software at Github](https://github.com/mjsuhonos)
 - [Code4Lib Journal](https://journal.code4lib.org/?s=suhonos)
