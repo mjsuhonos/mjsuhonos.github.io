@@ -1,6 +1,6 @@
 # MJ Suhonos
 
-I currently work at Toronto Metropolitain University in Toronto.
+I currently work at Toronto Metropolitan University in Toronto.
 
 - [Software at Github](https://github.com/mjsuhonos)
 - [Code4Lib Journal](https://journal.code4lib.org/?s=suhonos)
