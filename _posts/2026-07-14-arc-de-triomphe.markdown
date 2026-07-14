@@ -83,10 +83,8 @@ The other three are internal Wikidata "statements" -- what do those look like?
 
 These are the same three P31 values as the web page, but with some additonal "ranking" information and, yes, provenance data for the referenced statement. So, we can infer that the `PreferredRank` statement qualifies to become a "direct" P31 relationship, while the other two do not.
 
-I think this is wrong, or at the very least, misleading.  It breaks logic with what is presented on the web page (all three statements), and it breaks logic with what one would reasonably expect from an RDF dump; ie. everything.  Including the statement ranking information is useful, but suppressing statements is not.
+Including the statement ranking information is useful, but suppressing statements is not.  I think this is wrong, or at the very least, misleading.  It breaks logic with what is presented on the web page (all three statements), and it breaks logic with what one would reasonably expect from an RDF dump; ie. everything.
 
 More practically, the class for which *Arc de Triomphe* belongs ("triumphal arch") is also, obviously and by far, the smallest.  This is a problem for [Wiki Core](https://wikicore.ca) which clusters items partly based on the size of the classes that they're in -- niche classes like "triumphal arch" are currently underrepresented.
 
-The [WikiProject Ontology Group](https://www.wikidata.org/wiki/Wikidata:WikiProject_Ontology) is responsible for managing how [P31 instance of](https://www.wikidata.org/wiki/Property:P31) is used.  I worry that examples like this reinforce a tree-based ontological view on Wikidata that's not an accurate representation of reality.
-
-The *Arc de Triomphe* is unquestionably a triumphal arch. But it is also a tourist attraction and a museum.
+It's manageable: an additional processing step to extract the P31 statements (as opposed to just "direct/P31" statements), and then cross-reference them by statement QID to get their value.  But the latest RDF dump is 250GB compressed, so it's going to take a while.
